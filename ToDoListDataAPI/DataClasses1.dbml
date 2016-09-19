@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RetroJazz" EntityNamespace="RetroJazz" ContextNamespace="RetroContext" Class="RetroDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=runar.database.windows.net;Initial Catalog=RetroJazz;User ID=runbro;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="RetroJazzConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Team" Member="Team">
+    <Type Name="Team">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Team_Notes" Member="Notes" ThisKey="Id" OtherKey="TeamId" Type="Notes" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notes" Member="Notes">
+    <Type Name="Notes">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Stars" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Team_Notes" Member="Team" ThisKey="TeamId" OtherKey="Id" Type="Team" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

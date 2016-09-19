@@ -1,0 +1,5 @@
+C:\Users\runbro\Documents\GitHub\AzureApiDemo\app-service-api-dotnet-todo-list-master\src\ToDoDb\bin\Debug\ToDoDb.dacpac
+C:\Users\runbro\Documents\GitHub\AzureApiDemo\app-service-api-dotnet-todo-list-master\src\ToDoDb\bin\Debug\ToDoDb.dll
+C:\Users\runbro\Documents\GitHub\AzureApiDemo\app-service-api-dotnet-todo-list-master\src\ToDoDb\bin\Debug\ToDoDb.pdb
+C:\Users\runbro\Documents\GitHub\AzureApiDemo\app-service-api-dotnet-todo-list-master\src\ToDoDb\obj\Debug\ToDoDb.dll
+C:\Users\runbro\Documents\GitHub\AzureApiDemo\app-service-api-dotnet-todo-list-master\src\ToDoDb\obj\Debug\ToDoDb.pdb
