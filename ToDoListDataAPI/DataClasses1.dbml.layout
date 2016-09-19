@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/RetroDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5e036cfb-b63f-4aee-9971-6651f2cd8133" absoluteBounds="2.625, 2.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/RetroDataContext/Team" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90e1b254-cbf7-43d0-b7eb-29975731486c" absoluteBounds="2.64, 2.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b6ff628-de4d-4ecb-86aa-ca2657325349" absoluteBounds="7, 2.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/RetroDataContext/Notes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0025740f-b802-419d-b779-77afcc16526b" absoluteBounds="7.015, 2.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 3.38544840494792); (7 : 3.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RetroDataContext/Team/Team_Notes" />
+      <nodes>
+        <classShapeMoniker Id="5e036cfb-b63f-4aee-9971-6651f2cd8133" />
+        <classShapeMoniker Id="4b6ff628-de4d-4ecb-86aa-ca2657325349" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
